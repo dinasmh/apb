@@ -1,6 +1,4 @@
-Attached in this email is an edaplayground link to my APB master design, implemented and connected to a dummy APB slave which generates the PREADY and PRDATA signals from an internal register file.
-
-In this playground, I used a simple UVM environment to verify the functionality of my design.
+In this code, I used a simple UVM environment to verify the functionality of my design.
 
 In the randomisation process, I specified a constraint to generate the sequences that result in memory read operations only, so that we can examine the wait feature relative to the PREADY of the slave, since PRDATA only gets its value once PREADY is asserted and the slave can effectuate read/write operations.
 
